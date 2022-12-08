@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button Href=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Itens</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let arrayProdutos of arrayProdutos">
+      <ion-label>{{ arrayProdutos.nome }}</ion-label>
+      <ion-label>{{ arrayProdutos.quantidade }}</ion-label>
+
+
+      <button ion-button clear (click)="delete(arrayProdutos.id.value)">
+        <ion-icon name="archive-outline"></ion-icon>
+      </button>
+    </ion-item>
+
+    
+  </ion-list>
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Front page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Front Page</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-list routerLink="/novo/">
+  <div>
+    <ion-button color = "dark">New</ion-button>
+  </div>
+</ion-list>
+
+<ion-list routerLink="/entrada/">
+<div>
+  <ion-button color = "dark" >Entry</ion-button>
+</div>
+</ion-list>
+
+<ion-list routerLink="/saida/">
+<div>
+  <ion-button color = "dark">Exit</ion-button>
+</div>
+</ion-list>
+
+<ion-list routerLink="/produtos/">
+<div>
+  <ion-button color = "dark">Products</ion-button>
+</div>
+</ion-list>
+</ion-content>
